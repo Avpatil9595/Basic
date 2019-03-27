@@ -27,3 +27,5 @@ class Emp_info(models.Model):
     updated_at = models.DateTimeField(default=datetime.now())
     class Meta:
         db_table='Emp_info'
+
+        '''aditya,cndsbvmd vkfns v,smv '''
