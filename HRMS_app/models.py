@@ -16,6 +16,7 @@ RELATION_CHOICES = (
 
 class FamilyInfoManager(models.Manager):
     def send_msg(self, msg):
+
         account_sid = 'AC34ee859c1832745012adc68428d840a6'
         auth_token = '153888f2fca0da540e9deb290f692fda'
         client = Client(account_sid, auth_token)
@@ -27,6 +28,7 @@ class FamilyInfoManager(models.Manager):
 
     def delete_family_info(self):
         self.is_deleted = True
+
         return 'Info deleted'
 
     def get_name(self):
